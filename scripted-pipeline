@@ -1,5 +1,5 @@
 node{
-  stage(){
+  stage("Scripted Pipeline"){
     echo "Hello World! from Scripted Pipeline"
   }
 }
