@@ -1,0 +1,10 @@
+pipeline{
+  agent any
+    stages{
+      stage("Build by Declarative-Pipeline"){
+        steps{
+          echo "Hello World! from declarative pipeline as simple and structured and it will start as per your configuration as restart some stages then it will ask you to start".
+        }
+      }
+    }
+}
