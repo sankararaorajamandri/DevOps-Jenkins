@@ -12,7 +12,9 @@ pipeline{
         }
       }
       stage("Deploy"){
+        steps{
           echo "Artifact is ready now. Please very checksum before deploy it"
+        }
       }
     }
   
