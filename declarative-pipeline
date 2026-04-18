@@ -1,10 +1,19 @@
 pipeline{
   agent any
     stages{
-      stage("Build by Declarative-Pipeline"){
+      stage("Build"){
         steps{
-          echo "Hello World! from declarative pipeline as simple and structured and it will start as per your configuration as restart some stages then it will ask you to start".
+          echo "Staging code is completed"
         }
       }
+      stage("Test"){
+        steps{
+          echo "All Unit Test cases are passed"
+        }
+      }
+      stage("Deploy"){
+          echo "Artifact is ready now. Please very checksum before deploy it"
+      }
     }
+  
 }
