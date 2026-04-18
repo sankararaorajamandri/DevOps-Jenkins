@@ -1,5 +1,13 @@
 node{
-  stage("Scripted Pipeline"){
+  stage("Build"){
     echo "Hello World! from Scripted Pipeline"
+  }
+  stage("Test"){
+    echo "Testing in progress"
+    echo "Testing is completed"
+  }
+  stage("Build"){
+    echo "Building is in progress"
+    echo "Artifact is ready and ready to deploy"
   }
 }
